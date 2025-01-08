@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 10px;
+}
+.question {
+  display: none;
+  margin: 15px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background: #f9f9f9;
+}
+.question-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.question-number {
+color: #FFFFFF;
+font: 19.6px "Open Sans",Arial,sans-serif;
+background: #FF000099;
+margin:0px 6px 0px 0px;
+padding: 0px 2px;
+}
+.question-text {
+  color:#000000;
+  font: 19.6px "Open Sans",Arial,sans-serif;
+  padding:0px 0px 0px 1px;
+  font-weight: bold;
+}
+.options {
+  margin-top: 15px;
+}
+.options label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; /* Added space between options */
+  font-weight: bold; /* Bold options */
+  cursor: pointer;
+}
+.options label span {
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+.correct span {
+  color: green;
+}
+.incorrect span {
+  color: red;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.pagination button {
+  padding: 10px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.pagination button.active {
+  background-color: #0056b3;
+}
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
